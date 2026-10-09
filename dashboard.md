@@ -10,7 +10,7 @@
 | Đèn | Hiện | 🟢 / 🟡 / 🔴 | Nguồn | Báo trước cho |
 |---|---|---|---|---|
 | **Time-to-first-value (TTFV)** | 21 ngày | 🟢 <14d · 🟡 14–30d · 🔴 >30d | [TB] Đo lường nội bộ | Tỷ lệ chuyển đổi POC → Paid & NRR năm đầu |
-| **% deal dừng ở khâu IT Security / Data Privacy** | 12% | 🟢 <10% · 🟡 10–20% · 🔴 >20% | [BM] Báo cáo AI DN VN (24/11/2025) | Sales cycle (tuần) & Win rate hợp đồng mới |
+| **% deal dừng ở khâu IT Security / Data Privacy** | 12% | 🟢 <10% · 🟡 10–20% · 🔴 >20% | [BM] [Báo cáo AI DN VN (Bộ KH&CN)](https://mst.gov.vn/cac-nganh-nao-o-viet-nam-dang-tang-toc-ung-dung-ai-197251122182057807.htm) (24/11/2025) | Sales cycle (tuần) & Win rate hợp đồng mới |
 
 ---
 
@@ -19,7 +19,7 @@
 | Đèn | Hiện | 🟢 / 🟡 / 🔴 | Nguồn | Báo trước cho |
 |---|---|---|---|---|
 | **Tỷ lệ sát hạch an toàn tuần đầu (D7)** | 72% | 🟢 ≥80% · 🟡 60–80% · 🔴 <60% | [TB] Chuẩn an toàn xưởng thép | Usage depth & Năng lực an toàn thực tế |
-| **Usage depth trong tài khoản (% Active Workers)** | 58% | 🟢 ≥65% · 🟡 40–65% · 🔴 <40% | [BM] Benchmarkit SaaS (27/08/2026) | Tỷ lệ gia hạn hợp đồng (GRR) |
+| **Usage depth trong tài khoản (% Active Workers)** | 58% | 🟢 ≥65% · 🟡 40–65% · 🔴 <40% | [BM] [Benchmarkit SaaS Metrics](https://www.benchmarkit.ai/2025benchmarks) (27/08/2026) | Tỷ lệ gia hạn hợp đồng (GRR) |
 | **Chi phí Inference AI / Ca hoàn thành** ⭐ | 1.050 đ | 🟢 <1.200 đ · 🟡 1.200–1.800 đ · 🔴 >1.800 đ | [MH] Tokenomics & COGS trần 24% | Biên lợi nhuận gộp (Gross Margin) |
 | **Chi phí triển khai & số hóa SOP ÷ ACV** | 13,9% | 🟢 <15% · 🟡 15–25% · 🔴 >25% | [MH] Định mức công kỹ sư & ACV 180tr | Khả năng mở rộng (Scalability) & Biên ròng |
 
@@ -29,7 +29,7 @@
 
 | Đèn | Hiện | 🟢 / 🟡 / 🔴 | Nguồn |
 |---|---|---|---|
-| **Gross Margin (Biên lợi nhuận gộp phần mềm)** | 66,2% | 🟢 ≥65% · 🟡 55–65% · 🔴 <55% | [BM] ICONIQ State of AI 2026 (07/2026) |
+| **Gross Margin (Biên lợi nhuận gộp phần mềm)** | 66,2% | 🟢 ≥65% · 🟡 55–65% · 🔴 <55% | [BM] [ICONIQ State of AI 2026](https://www.iconiq.com/growth/reports/state-of-ai-2026) (07/2026) |
 
 ---
 

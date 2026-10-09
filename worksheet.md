@@ -15,13 +15,13 @@ Họ tên: Đỗ Trương Thành Ân · MSSV: 2A202602899 · Ngày làm: 09/10/2
 | **Time-to-first-value (TTFV)** ⭐ | ✅ | Đo được ngay từ bảng `worker_lesson_progress` trong CSDL PostgreSQL: thời gian từ ngày bàn giao tài khoản đến ca học đầu tiên có công nhân đạt điểm quiz an toàn ≥ 80. |
 | **Pipeline coverage** | ✅ | Đo được trong CRM quản lý bán hàng (HubSpot/Notion): Tổng giá trị cơ hội B2B đã qua bước khảo sát hiện trường xưởng ÷ Chỉ tiêu doanh thu quý (Target 540 triệu VNĐ/quý ~ 3 nhà máy). |
 | **% deal chết ở khâu security/procurement** | ✅ | Đo được từ biên bản thương thảo hợp đồng: tỷ lệ deal dừng do vướng quy định an toàn dữ liệu công nghệ sản xuất, bí mật quy trình SOP hoặc yêu cầu triển khai On-Premise/Private Cloud. |
-| **POC → paid conversion rate** | 🔧 | Đo được trong 2 tuần: tỷ lệ các nhà máy chạy thử nghiệm Pilot 1 phân xưởng chuyển đổi thành hợp đồng thương mại thường niên chính thức (ACV trả tiền). |
-| **Sales cycle (tuần)** | ✅ | Đo được trong CRM: số tuần tính từ buổi demo đầu tiên với Quản đốc phân xưởng đến ngày ký kết hợp đồng có chữ ký Giám đốc nhà máy. |
+| **POC → paid conversion rate** | 🔧 | Đo được trong 2 tuần: tỷ lệ các nhà máy chạy thử nghiệm Pilot 1 phân xưởng chuyển đổi thành hợp đồng thương mại thường niên chính thức (ACV trả tiền). Benchmark ngành B2B AI: **~50%** theo [ICONIQ State of Go-to-Market 2026](https://www.iconiq.com/growth/reports/state-of-go-to-market-2026) (kiểm tra 27/08/2026). |
+| **Sales cycle (tuần)** | ✅ | Đo được trong CRM: số tuần tính từ buổi demo đầu tiên với Quản đốc phân xưởng đến ngày ký kết hợp đồng có chữ ký Giám đốc nhà máy. Benchmark ngành B2B: **~19 tuần** theo [ICONIQ State of Go-to-Market 2026](https://www.iconiq.com/growth/reports/state-of-go-to-market-2026) (kiểm tra 27/08/2026). |
 | **Usage depth trong tài khoản** | ✅ | Đo được trực tiếp từ database query: % công nhân trong ca có ít nhất 1 phiên học hỏi đáp AI Tutor và hoàn thành tối thiểu 1 bài quiz kiểm tra trong 7 ngày qua. |
 | **Chi phí triển khai ÷ ACV** | ✅ | Đo được từ bảng chấm công nhân sự: (Giờ công kỹ sư số hóa Markdown SOP + khảo sát xưởng thực tế + server setup) ÷ Giá trị hợp đồng năm (ACV). |
 | **Tập trung doanh thu** | ✅ | Đo được từ báo cáo tài chính: Doanh thu của nhà máy lớn nhất ÷ Tổng doanh thu toàn hệ thống. |
-| **Net Revenue Retention (NRR)** | 🔧 | Cần theo dõi sau 6–12 tháng: tỷ lệ mở rộng hợp đồng từ 1 phân xưởng ban đầu sang các phân xưởng khác trong cùng tập đoàn thép (ví dụ: mở rộng từ Xưởng Cán sang Xưởng Lò cao, Xưởng Đột dập). |
-| **Gross Margin** | ✅ | Đo được hàng tháng: (Doanh thu phần mềm - Chi phí API OpenAI GPT-4o-mini - Chi phí máy chủ Render/Supabase) ÷ Doanh thu. |
+| **Net Revenue Retention (NRR)** | 🔧 | Cần theo dõi sau 6–12 tháng: tỷ lệ mở rộng hợp đồng từ 1 phân xưởng ban đầu sang các phân xưởng khác trong cùng tập đoàn thép. Benchmark trung vị SaaS: **101%** theo [Benchmarkit 2025 SaaS Performance Metrics](https://www.benchmarkit.ai/2025benchmarks) (kiểm tra 27/08/2026). |
+| **Gross Margin** | ✅ | Đo được hàng tháng: (Doanh thu phần mềm - Chi phí API OpenAI GPT-4o-mini - Chi phí máy chủ Render/Supabase) ÷ Doanh thu. Benchmark AI-native: **45% (2025) → 53% (2026P)** theo [ICONIQ State of AI 2026](https://www.iconiq.com/growth/reports/state-of-ai-2026) (công bố 07/2026). |
 
 ---
 
@@ -48,12 +48,12 @@ Họ tên: Đỗ Trương Thành Ân · MSSV: 2A202602899 · Ngày làm: 09/10/2
 | # | Đèn | 🟢 | 🟡 | 🔴 | Nguồn [BM]/[MH]/[TB] | Lý do (1 câu) · ngày kiểm tra nếu [BM] |
 |---|---|---|---|---|---|---|
 | 1 | **Time-to-first-value (TTFV)** | < 14 ngày | 14–30 ngày | > 30 ngày | **[TB]** Đo lường nội bộ | Chu kỳ thử việc của công nhân nhà máy là 30 ngày; nếu sau 14 ngày công nhân chưa tự tin thao tác máy thì nhà máy sẽ quay lại cách kèm cặp thủ công và bỏ rơi phần mềm. |
-| 2 | **% deal dừng ở khâu IT Security / Data Privacy** | < 10% | 10–20% | > 20% | **[BM]** Viện CNTT ĐHQGHN & Báo cáo AI Doanh nghiệp Việt Nam (24/11/2025) | Lo ngại rò rỉ bí quyết công nghệ luyện kim là rào cản số 1 của doanh nghiệp sản xuất; nếu >20% deal dừng ở đây thì sản phẩm chưa chứng minh được an toàn dữ liệu nội bộ. |
+| 2 | **% deal dừng ở khâu IT Security / Data Privacy** | < 10% | 10–20% | > 20% | **[BM]** [Báo cáo AI Việt Nam 2025 — Viện CNTT ĐHQGHN / Bộ KH&CN](https://mst.gov.vn/cac-nganh-nao-o-viet-nam-dang-tang-toc-ung-dung-ai-197251122182057807.htm) (công bố 24/11/2025) | Lo ngại rò rỉ bí quyết công nghệ luyện kim là rào cản số 1 của doanh nghiệp sản xuất; nếu >20% deal dừng ở đây thì sản phẩm chưa chứng minh được an toàn dữ liệu nội bộ. |
 | 3 | **Tỷ lệ hoàn thành sát hạch an toàn tuần đầu (D7)** | ≥ 80% | 60–80% | < 60% | **[TB]** Quy chuẩn an toàn lao động phân xưởng thép | Công nhân không đạt chuẩn an toàn 80% trong tuần đầu sẽ có nguy cơ cao thao tác sai gây sự cố dừng lò cán hoặc tai nạn lao động nghiêm trọng. |
-| 4 | **Usage depth trong tài khoản (% Active Workers)** | ≥ 65% | 40–65% | < 40% | **[BM]** HANDBOOK §3.2 & Benchmarkit SaaS Report (kiểm tra 27/08/2026) | Ca sản xuất có tính kỷ luật cao; nếu dưới 40% công nhân vào học thì chứng tỏ Quản đốc chưa đưa phần mềm vào quy chế vận hành ca bắt buộc. |
+| 4 | **Usage depth trong tài khoản (% Active Workers)** | ≥ 65% | 40–65% | < 40% | **[BM]** [Benchmarkit 2025 SaaS Performance Metrics](https://www.benchmarkit.ai/2025benchmarks) (kiểm tra 27/08/2026) | Ca sản xuất có tính kỷ luật cao; nếu dưới 40% công nhân vào học thì chứng tỏ Quản đốc chưa đưa phần mềm vào quy chế vận hành ca bắt buộc. |
 | 5 | **Chi phí Inference AI / Ca đào tạo hoàn thành** ⭐ | < 1.200 đ | 1.200 – 1.800 đ | > 1.800 đ | **[MH]** Suy ngược từ mô hình tài chính Tokenomics & COGS trần 24% | Với giá bán 75.000 đ/công nhân/tháng học 10 ca SOP, chi phí token tối đa cho phép là 1.800 đ/ca để giữ tỷ trọng chi phí AI < 24% cấu trúc giá vốn (đúng chuẩn ICONIQ 2026). |
 | 6 | **Chi phí triển khai & số hóa SOP ÷ ACV** | < 15% | 15–25% | > 25% | **[MH]** Suy ngược từ ACV 180 triệu VNĐ và định mức giờ công kỹ sư | Nếu chi phí số hóa tài liệu tại chỗ vượt quá 25% ACV (>45 triệu VNĐ), công ty sẽ rơi vào bẫy công ty dịch vụ gia công tài liệu thay vì sản phẩm phần mềm có thể nhân rộng. |
-| 7 | **Gross Margin (Biên lợi nhuận gộp)** | ≥ 65% | 55–65% | < 55% | **[BM]** ICONIQ State of AI 2026 (công bố 07/2026) | Báo cáo ICONIQ 2026 chỉ ra trung vị Gross Margin AI-native là 53% (2026P); duy trì mức ≥65% đảm bảo thặng dư để tái đầu tư vào R&D mô hình RAG chuyên sâu. |
+| 7 | **Gross Margin (Biên lợi nhuận gộp)** | ≥ 65% | 55–65% | < 55% | **[BM]** [ICONIQ State of AI 2026](https://www.iconiq.com/growth/reports/state-of-ai-2026) (công bố 07/2026) | Báo cáo ICONIQ 2026 chỉ ra trung vị Gross Margin AI-native là 53% (2026P); duy trì mức ≥65% đảm bảo thặng dư để tái đầu tư vào R&D mô hình RAG chuyên sâu. |
 
 ---
 
